@@ -1,7 +1,6 @@
 restart;
-load "~/Downloads/Workshop-2020-Cleveland/alg-stat/HierarchicalModels/HierarchicalModels.m2";
+load "HierarchicalModels.m2";
 debug HierarchicalModels;
-installPackage HierarchicalModels;
 
 viewHelp HierarchicalModels
 
@@ -33,4 +32,3 @@ f = (first entries gens I1)_0
 fLift = liftHierPoly(f, {{2}, {1,2}}, R, true)
 
 isSubset(ideal(fLift), I)
-
